@@ -1,0 +1,88 @@
+.site-nav .container .site-navigation img{
+    height: 100px;
+}
+
+.site-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#telefon-cislo {
+    padding-top: 30px;
+}
+
+.zarovnat {
+    width: 70%; 
+}
+
+@media (width <= 991px){
+    .zarovnat{
+        width: 100%;
+    }
+}
+
+
+.atelh3{
+    letter-spacing: 2px;
+}
+
+
+@media (width <= 575px){
+    .row-mobile{
+        gap: 10px;
+    }
+}
+
+
+
+/* Splash screen */
+
+
+.introka{
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.introka div{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+}
+
+.intrologo{
+    position: relative;
+    display: inline-block;
+    bottom: -40px;
+    opacity: 0;
+}
+
+.intrologo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.intrologo.fadeintro{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+
